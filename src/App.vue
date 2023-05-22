@@ -4,6 +4,10 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <TestEM/>
     <TestComponent component-name="hello---world"/>
+    <router-link to="testem">GoTestEM</router-link>
+    <router-link to="/hello">Helloworld</router-link>
+    <router-link :to="{path: '/hello'}"> Helloworld </router-link>
+
   </div>
 </template>
 
@@ -20,6 +24,8 @@ export default {
     TestComponent
   }
 }
+
+
 </script>
 
 <style>
