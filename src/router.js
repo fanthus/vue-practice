@@ -1,16 +1,22 @@
-import VueRouter from 'vue-router';
+
+import VueRouter from 'vue-router'
 import TestEM from './components/TestEM'
 import HelloWorld from './components/HelloWorld';
 
-export default new VueRouter({
+
+const router = new VueRouter({
+  mode: 'history',
   routes:[
     {
-      path: '/testem', 
+      path: '/test',
       component: TestEM
     },
     {
       path: '/hello', 
+      name: 'hello',
       component: HelloWorld
     }
   ]
 })
+
+export default router;
