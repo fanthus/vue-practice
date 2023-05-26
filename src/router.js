@@ -1,20 +1,33 @@
 
 import VueRouter from 'vue-router'
-import TestEM from './components/TestEM'
-import HelloWorld from './components/HelloWorld';
-
+import TestCSS from './components/TestCSS.vue'
+import TestVueBasic from './components/TestVueBasic';
+import TestCSSLayout from './components/TestCSSLayout.vue'
+import TestCSSFlexLayout from './components/TestCSSFlexLayout.vue'
+import TestCSSPosition from './components/TestCSSPosition.vue'
 
 const router = new VueRouter({
   mode: 'history',
   routes:[
     {
-      path: '/test',
-      component: TestEM
+      path: '/testcss',
+      component: TestCSS
     },
     {
-      path: '/hello', 
-      name: 'hello',
-      component: HelloWorld
+      path: '/testcsslayout',
+      component: TestCSSLayout
+    },
+    {
+      path: '/test/css/position',
+      component: TestCSSPosition
+    },
+    {
+      path: '/testflexlayout',
+      component:TestCSSFlexLayout
+    },
+    {
+      path: '/testvue', 
+      component: TestVueBasic
     }
   ]
 })
