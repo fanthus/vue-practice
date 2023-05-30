@@ -5,6 +5,7 @@ import TestVueBasic from './components/TestVueBasic';
 import TestCSSLayout from './components/TestCSSLayout.vue'
 import TestCSSFlexLayout from './components/TestCSSFlexLayout.vue'
 import TestCSSPosition from './components/TestCSSPosition.vue'
+import TestAxios from './components/TestAxios.vue'
 
 const router = new VueRouter({
   mode: 'history',
@@ -28,6 +29,10 @@ const router = new VueRouter({
     {
       path: '/testvue', 
       component: TestVueBasic
+    },
+    {
+      path: '/testaxios',
+      component: TestAxios
     }
   ]
 })

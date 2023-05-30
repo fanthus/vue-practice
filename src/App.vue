@@ -17,6 +17,9 @@
       <li class="list-style">
         <router-link to="/testvue">test vue basic</router-link>
       </li>
+      <li class="list-style">
+        <router-link to="/testaxios">test axios</router-link>
+      </li>
     </ul>
 
     <TestComponent component-name="hello---world" />
