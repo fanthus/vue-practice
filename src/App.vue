@@ -20,6 +20,9 @@
       <li class="list-style">
         <router-link to="/testaxios">test axios</router-link>
       </li>
+      <li class="list-style">
+        <router-link to="/test/home">自己模仿的一个网站首页</router-link>
+      </li>
     </ul>
 
     <TestComponent component-name="hello---world" />

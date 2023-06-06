@@ -6,6 +6,7 @@ import TestCSSLayout from './components/TestCSSLayout.vue'
 import TestCSSFlexLayout from './components/TestCSSFlexLayout.vue'
 import TestCSSPosition from './components/TestCSSPosition.vue'
 import TestAxios from './components/TestAxios.vue'
+import TestWebHome from './components/TestWebHome.vue'
 
 const router = new VueRouter({
   mode: 'history',
@@ -33,6 +34,10 @@ const router = new VueRouter({
     {
       path: '/testaxios',
       component: TestAxios
+    },
+    {
+      path: '/test/home',
+      component: TestWebHome
     }
   ]
 })
