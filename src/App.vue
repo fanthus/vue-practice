@@ -15,7 +15,7 @@
         <router-link to="/testflexlayout">test flex layout</router-link>
       </li>
       <li class="list-style">
-        <router-link to="/testvue">test vue basic</router-link>
+        <router-link to="/testvue">test vue & js basic</router-link>
       </li>
       <li class="list-style">
         <router-link to="/testaxios">test axios</router-link>
