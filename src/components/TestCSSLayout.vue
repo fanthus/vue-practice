@@ -21,15 +21,14 @@
       <div class="item">2</div>
       <div class="item">3</div>
     </div>
-
-
   </div>
 </template>
 
-<script>
-</script>
+<script> </script>
 
 <style>
+
+
 
 /* block 1.换行 2.width height 生效 */
 .block-ele {

@@ -4,6 +4,16 @@
     <p>{{ reversedMessage }}</p>
     <div v-if="shouldShow">ShouldShow</div>
     <button @click="click">点我执行JS代码</button>
+    <div>
+      <div v-for="(item, index) in persons" :key=index>
+        <div v-if="index<2">
+          {{ item.name }}
+        </div>
+      </div>
+      <div v-for="(item,index) in 3" :key=index>
+        index:{{ index }} -  item:{{ item }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -21,6 +31,16 @@ export default {
     return {
       message: "Hello!",
       shouldShow: false,
+      persons:[{
+        "name": "fan",
+        "score": 97
+      },{
+        "name": "wang",
+        "score": 100
+      },{
+        "name": "zheng",
+        "score": 99
+      }]
     };
   },
   computed: {
@@ -30,7 +50,7 @@ export default {
   },
   methods: {
     click() {
-      // this.shouldShow = !this.shouldShow;
+      this.shouldShow = !this.shouldShow;
       console.log(time);
       console.log(`${curTime}, ${name}, ${number}, ${realRandom()}`);
       // console.log(nodetime);
