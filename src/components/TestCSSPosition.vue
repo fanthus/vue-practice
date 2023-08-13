@@ -19,10 +19,17 @@
         <div class="item-pos-static"></div>
       </div>
       <br>
-      <div>Position abosulte 使用</div>
+      <div>Position abosulte(top)使用</div>
       <div class="flex-container">
         <div class="item-pos-static">下面这个absolute元素在文档最上面</div>
-        <div class="item-pos-absolute">在当前界面最上面（top30），已经彻底脱离flex布局流了</div>
+        <div class="item-pos-absolute-top">在当前界面最上面（top30），已经彻底脱离flex布局流了</div>
+        <div class="item-pos-static"></div>
+      </div>
+      <br>
+      <div>Position abosulte(margin-top)使用</div>
+      <div class="flex-container">
+        <div class="item-pos-static">下面这个absolute元素在文档最上面</div>
+        <div class="item-pos-absolute-margintop">脱离flex布局流，和relative区别在于marginTop控制的是距当前容器顶部的距离</div>
         <div class="item-pos-static"></div>
       </div>
       <br>
@@ -30,7 +37,7 @@
       <div class="flex-container">
         <div class="item-pos-static"></div>
         <div class="item-pos-relative">
-          <div class="item-pos-absolute"></div>
+          <div class="item-pos-absolute-top"></div>
         </div>
         <div class="item-pos-static"></div>
       </div>
@@ -103,7 +110,7 @@
   left: 50px;
 }
 
-.item-pos-absolute {
+.item-pos-absolute-top {
   background-color: darkgrey;
   position: absolute;
   width: 100%;
@@ -112,11 +119,21 @@
   left: 30px;
 }
 
-.item-pos-fixed {
-  position: fixed;
-  background-color: blueviolet;
+.item-pos-absolute-margintop {
+  background-color: darkgrey;
+  position: absolute;
   width: 100%;
   height: 30px;
+  margin-top: 30px;
+  left: 30px;
+}
+
+.item-pos-fixed {
+  position: fixed;
+  background-color: blue;
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
 }
 
 
