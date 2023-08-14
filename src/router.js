@@ -1,5 +1,6 @@
 
 import VueRouter from 'vue-router'
+import TestComponentFather from './components/TestComponentFather.vue'
 import TestCSS from './components/TestCSS.vue'
 import TestVueBasic from './components/TestVueBasic';
 import TestCSSLayout from './components/TestCSSLayout.vue'
@@ -11,6 +12,10 @@ import TestWebHome from './components/TestWebHome.vue'
 const router = new VueRouter({
   mode: 'history',
   routes:[
+    {
+      path: '/test/component/communicate',
+      component: TestComponentFather
+    },
     {
       path: '/testcss',
       component: TestCSS
