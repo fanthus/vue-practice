@@ -9,6 +9,7 @@ import TestCSSPosition from './components/TestCSSPosition.vue'
 import TestAxios from './components/TestAxios.vue'
 import TestWebHome from './components/TestWebHome.vue'
 import TestAnimatioin from './components/TestAnimatioin.vue'
+import TestListSelected from './components/TestListSelected.vue'
 
 const router = new VueRouter({
   mode: 'history',
@@ -48,6 +49,10 @@ const router = new VueRouter({
     {
       path: '/test/animation',
       component: TestAnimatioin
+    },
+    {
+      path: '/test/selected',
+      component: TestListSelected
     }
   ]
 })
