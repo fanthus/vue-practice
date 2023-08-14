@@ -26,6 +26,9 @@
       <li class="list-style">
         <router-link to="/test/home">自己模仿的一个网站首页</router-link>
       </li>
+      <li class="list-style">
+        <router-link to="/test/animation">测试动画</router-link>
+      </li>
     </ul>
 
     <TestComponent component-name="hello---world" />

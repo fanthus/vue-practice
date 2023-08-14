@@ -8,6 +8,7 @@ import TestCSSFlexLayout from './components/TestCSSFlexLayout.vue'
 import TestCSSPosition from './components/TestCSSPosition.vue'
 import TestAxios from './components/TestAxios.vue'
 import TestWebHome from './components/TestWebHome.vue'
+import TestAnimatioin from './components/TestAnimatioin.vue'
 
 const router = new VueRouter({
   mode: 'history',
@@ -43,6 +44,10 @@ const router = new VueRouter({
     {
       path: '/test/home',
       component: TestWebHome
+    },
+    {
+      path: '/test/animation',
+      component: TestAnimatioin
     }
   ]
 })
