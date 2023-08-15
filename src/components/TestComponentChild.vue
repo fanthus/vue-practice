@@ -27,15 +27,17 @@ export default {
   ],
   methods: {
     printProperty() {
-      console.log(this.bindChildName);
-      console.log(this.childName);
+      console.log(`#child# ${this.bindChildName}`);
+      console.log(`#child# ${this.childName}`);
     },
     clickSendMsgToParent() {
-      console.log("clickSendMsgToParent");
+      console.log("#child# clickSendMsgToParent");
+      this.$parent.fatherMethod()
     },
     someOneClickMe() {
-      console.log("someOneClickMe");
+      console.log("#child# someOneClickMe");
     }
+
   }
 }
 

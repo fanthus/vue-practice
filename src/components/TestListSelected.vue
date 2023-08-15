@@ -1,6 +1,10 @@
 <template>
   <div class="container">
     hello world
+
+    <!-- <div :class="[baseClass, isActive ? 'active' : 'inactive']">Array Class</div> -->
+
+
     <div v-for="(item,index) in infoList" :key="index" class="item" :class="{ dynamicItem: item.isSelected }" @click="toggleSelect(index)"> {{item}} </div>
 
   </div>
@@ -13,11 +17,22 @@ export default {
   data() {
     return {
       infoList:[
-        { name: "wang", isSelected: false },
-        { name: "fan", isSelected: true },
+        { name: "wang" },   
+        { name: "fan"},
       ],
       preSelectItem:{}
     }
+  },
+  created() {
+    this.infoList.forEach((item) => {
+      item.isSelected = false
+    })
+  },
+  mounted() {
+    console.log("mounted");
+    this.preSelectItem = this.infoList[1]
+    this.preSelectItem.isSelected = true
+    
   },
   methods: {
     toggleSelect(index) {
@@ -26,6 +41,8 @@ export default {
       this.preSelectItem.isSelected = false
       item.isSelected = true
       this.preSelectItem = item;
+      // this.$set(this.infoList, index, {...this.infoList[index], isSelected:true}) //Vue2 操作数组的方式
+      // this.$forceUpdate()   //如果刚开始 infoList 数组条目里没有 isSelected 属性，则绑定不上
     }
   }
 }

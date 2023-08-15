@@ -31,6 +31,9 @@ export default {
     clickSendMsgToChild() {
       this.clicked = true
       this.$refs.child.someOneClickMe()
+    },
+    fatherMethod() {
+      console.log("#father# this is father method")
     }
   }
 }
