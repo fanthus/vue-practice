@@ -10,6 +10,9 @@ import TestAxios from './components/TestAxios.vue'
 import TestWebHome from './components/TestWebHome.vue'
 import TestAnimatioin from './components/TestAnimatioin.vue'
 import TestListSelected from './components/TestListSelected.vue'
+import TestCSSOverflow from './components/TestCSSOverflow.vue'
+import TestCSSImage from './components/TestCSSImage.vue'
+
 
 const router = new VueRouter({
   mode: 'history',
@@ -23,6 +26,14 @@ const router = new VueRouter({
       component: TestCSS
     },
     {
+      path: '/test/css/overflow',
+      component: TestCSSOverflow
+    },
+    {
+      path: '/test/css/image',
+      component: TestCSSImage
+    },
+    {
       path: '/testcsslayout',
       component: TestCSSLayout
     },
@@ -31,7 +42,7 @@ const router = new VueRouter({
       component: TestCSSPosition
     },
     {
-      path: '/testflexlayout',
+      path: '/test/flexlayout',
       component:TestCSSFlexLayout
     },
     {

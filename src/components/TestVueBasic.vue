@@ -5,14 +5,18 @@
     <div v-if="shouldShow">ShouldShow</div>
     <button @click="click">点我执行JS代码</button>
     <div>
-      <div v-for="(item, index) in persons" :key=index>
+      <div v-for="(item, index) in persons" :key="index">
         <div v-if="index<2">
           {{ item.name }}
         </div>
       </div>
-      <div v-for="(item,index) in 3" :key=index>
+      <div v-for="(item,index) in 3" :key="index">
         index:{{ index }} -  item:{{ item }}
       </div>
+    </div>
+    <br>
+    <div ref="helloref">
+      <button @click="getRef">获取refs</button>
     </div>
   </div>
 </template>
@@ -48,6 +52,9 @@ export default {
       return this.message.split("").reverse().join("");
     },
   },
+  mounted() {
+    this.getRef()
+  },
   methods: {
     click() {
       this.shouldShow = !this.shouldShow;
@@ -55,6 +62,14 @@ export default {
       console.log(`${curTime}, ${name}, ${number}, ${realRandom()}`);
       // console.log(nodetime);
     },
+    getRef() {
+      console.log("get refs",this.$refs)
+      console.log("get refs",this.$refs.helloref)
+      this.$refs.helloref.scrollIntoView({ 
+        behavior: 'smooth',
+        block: `end`
+      }); // 使用平滑滚动效果
+    }
   },
 };
 </script>

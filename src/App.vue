@@ -12,13 +12,16 @@
         <router-link to="/test/css/overflow">test css overflow</router-link>
       </li>
       <li class="list-style">
+        <router-link to="/test/css/image">test css image</router-link>
+      </li>
+      <li class="list-style">
         <router-link to="/testcsslayout">test css layout</router-link>
       </li>
       <li class="list-style">
         <router-link to="/test/css/position">test css position</router-link>
       </li>
       <li class="list-style">
-        <router-link to="/testflexlayout">test flex layout</router-link>
+        <router-link to="/test/flexlayout">test flexlayout</router-link>
       </li>
       <li class="list-style">
         <router-link to="/testvue">test vue & js basic</router-link>
