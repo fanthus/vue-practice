@@ -6,6 +6,9 @@
         <router-link to="/test/component/communicate">测试父子组件通信</router-link>
       </li>
       <li class="list-style">
+        <router-link to="/test/scss">test scss</router-link>
+      </li>
+      <li class="list-style">
         <router-link to="/testcss">test css</router-link>
       </li>
       <li class="list-style">

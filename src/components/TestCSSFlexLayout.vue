@@ -28,7 +28,7 @@
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 .flex-column-container {
   display: flex;

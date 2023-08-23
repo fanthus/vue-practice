@@ -12,6 +12,7 @@ import TestAnimatioin from './components/TestAnimatioin.vue'
 import TestListSelected from './components/TestListSelected.vue'
 import TestCSSOverflow from './components/TestCSSOverflow.vue'
 import TestCSSImage from './components/TestCSSImage.vue'
+import TestSCSS from './components/TestSCSS.vue'
 
 
 const router = new VueRouter({
@@ -20,6 +21,10 @@ const router = new VueRouter({
     {
       path: '/test/component/communicate',
       component: TestComponentFather
+    },
+    {
+      path: '/test/scss',
+      component: TestSCSS
     },
     {
       path: '/testcss',
