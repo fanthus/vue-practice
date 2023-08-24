@@ -9,7 +9,6 @@
         </div>
       </div>
     </div>
-
     <div class="section-two">
       <div class="font-bold">flex 布局中子项使用 position 属性的情况</div>
       <div>Position relative 使用</div>
@@ -55,7 +54,7 @@
 <script>
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 .font-bold {
   font-weight: 800;
@@ -63,7 +62,6 @@
 }
 
 .secion-one {
-  
   .photo {
   /* display: flex; */  /* 其实和flex布局没有关系 */
   position: relative;
