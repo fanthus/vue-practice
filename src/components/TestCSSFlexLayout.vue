@@ -197,6 +197,7 @@
       justify-content: center;
       // 这儿的另外一种实现是，设置 align-items: center
       .green-two-txt {
+        color: white;
         align-self: center;
       }
     }
