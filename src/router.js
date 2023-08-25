@@ -13,11 +13,16 @@ import TestListSelected from './components/TestListSelected.vue'
 import TestCSSOverflow from './components/TestCSSOverflow.vue'
 import TestCSSImage from './components/TestCSSImage.vue'
 import TestSCSS from './components/TestSCSS.vue'
+import TestVant from './components/TestVant.vue'
 
 
 const router = new VueRouter({
   mode: 'history',
   routes:[
+    {
+      path: '/test/vant',
+      component: TestVant
+    },
     {
       path: '/test/component/communicate',
       component: TestComponentFather

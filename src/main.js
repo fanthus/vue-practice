@@ -2,8 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import router from './router'
+import { Popup } from 'vant';
+import { Button } from 'vant';
 
 Vue.use(VueRouter)
+Vue.use(Button);
+Vue.use(Popup);
 
 new Vue({
   router,
