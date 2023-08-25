@@ -2,9 +2,11 @@
   <div class="container">
     <div class="vant-container">
       <div class="vant-popup">
-        <div class="vant-popup-ctrl" @click="clickPopup">点我</div>
-        <van-button type="primary">主要按钮</van-button>
-        <van-popup v-model="showPopup">内容</van-popup>
+        <van-button type="primary" @click="clickPopup">点我弹框</van-button>
+        <van-popup v-model="showPopup" position="bottom">内容
+          <popupContentComponent>xx</popupContentComponent>
+        </van-popup>
+        
       </div>
     </div>
   </div>
@@ -12,6 +14,7 @@
 
 <script>
 
+import popupContentComponent from "./../components/PopupContentComponent.vue" 
 
 export default ({
   data() {
@@ -19,6 +22,7 @@ export default ({
       showPopup: false
     };
   },
+  components: { popupContentComponent },
   mounted(){
     console.log("mounted");
   },  

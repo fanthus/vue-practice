@@ -1,19 +1,19 @@
 
 import VueRouter from 'vue-router'
-import TestComponentFather from './components/TestComponentFather.vue'
-import TestCSS from './components/TestCSS.vue'
-import TestVueBasic from './components/TestVueBasic';
-import TestCSSLayout from './components/TestCSSLayout.vue'
-import TestCSSFlexLayout from './components/TestCSSFlexLayout.vue'
-import TestCSSPosition from './components/TestCSSPosition.vue'
-import TestAxios from './components/TestAxios.vue'
-import TestWebHome from './components/TestWebHome.vue'
-import TestAnimatioin from './components/TestAnimatioin.vue'
-import TestListSelected from './components/TestListSelected.vue'
-import TestCSSOverflow from './components/TestCSSOverflow.vue'
-import TestCSSImage from './components/TestCSSImage.vue'
-import TestSCSS from './components/TestSCSS.vue'
-import TestVant from './components/TestVant.vue'
+import TestComponentFather from './views/TestComponentFather.vue'
+import TestCSS from './views/TestCSS.vue'
+import TestVueBasic from './views/TestVueBasic';
+import TestCSSLayout from './views/TestCSSLayout.vue'
+import TestCSSFlexLayout from './views/TestCSSFlexLayout.vue'
+import TestCSSPosition from './views/TestCSSPosition.vue'
+import TestAxios from './views/TestAxios.vue'
+import TestWebHome from './views/TestWebHome.vue'
+import TestAnimatioin from './views/TestAnimatioin.vue'
+import TestListSelected from './views/TestListSelected.vue'
+import TestCSSOverflow from './views/TestCSSOverflow.vue'
+import TestCSSImage from './views/TestCSSImage.vue'
+import TestSCSS from './views/TestSCSS.vue'
+import TestVant from './views/TestVant.vue'
 
 
 const router = new VueRouter({

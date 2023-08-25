@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import TestComponent from "./components/TestComponent.vue";
+import TestComponent from "./views/TestComponent.vue";
 
 export default {
   name: "App",
