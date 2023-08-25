@@ -1,19 +1,15 @@
 <template>
   <div class="container">
     <div class="position-container">
-      <span>父组件使用 position 属性的情况</span>
+      <span>父组件使用 position 属性的情况👇</span>
       <div class="secion-one">
         
         <div class="photo">
-          <img
-            class="photo-image"
-            src="https://img2.baidu.com/it/u=1579991524,66947472&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
-            alt=""
-          />
+          <img class="photo-image" src="https://img2.baidu.com/it/u=1579991524,66947472&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt=""/>
           <div class="counter">共三张</div>
         </div>
       </div>
-      <span>flex 布局中子项使用 position 属性的情况</span>
+      <span style="margin-top: 100px;">flex 布局中子项使用 position 属性的情况👇</span>
       <div class="flex-position-container">
         <div class="flex-container-position-relative-top column-container">
           <div>Position relative 使用</div>
@@ -67,6 +63,15 @@
           <div class="item-brown"></div>
         </div>
       </div>
+      <span style="margin-top: 100px;">普通block布局中使用 position 属性的情况👇</span>
+      <div class="block-position-container">
+        <div class="normal-block">
+          <div class="inner-block">
+
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -142,7 +147,7 @@
         font-size: small;
       }
     }
-    
+
     .flex-container-position-relative-margintop {
       margin-left: 20px;
       .item-pos-relative-margintop {
@@ -209,5 +214,26 @@
 
     
   }
+
+  .block-position-container{
+    display: flex;
+    flex-direction: row;
+
+    .normal-block {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: gainsboro;
+
+      .inner-block {
+        position: absolute;
+        right: 0px;
+        width: 100px;
+        height: 100px;
+        background-color: sandybrown;
+      }
+    }
+  }
+
 }
 </style>
