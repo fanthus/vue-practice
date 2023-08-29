@@ -6,6 +6,9 @@
         <router-link to="/test/vant">测试Vant组件</router-link>
       </li>
       <li class="list-style">
+        <router-link to="/test/mixins">测试 Mixins</router-link>
+      </li>
+      <li class="list-style">
         <router-link to="/test/component/communicate">测试父子组件通信</router-link>
       </li>
       <li class="list-style">

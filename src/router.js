@@ -14,6 +14,7 @@ import TestCSSOverflow from './views/TestCSSOverflow.vue'
 import TestCSSImage from './views/TestCSSImage.vue'
 import TestSCSS from './views/TestSCSS.vue'
 import TestVant from './views/TestVant.vue'
+import TestMixins from './views/TestMixins.vue'
 
 
 const router = new VueRouter({
@@ -22,6 +23,10 @@ const router = new VueRouter({
     {
       path: '/test/vant',
       component: TestVant
+    },
+    {
+      path: '/test/mixins',
+      component: TestMixins
     },
     {
       path: '/test/component/communicate',
